@@ -9116,99 +9116,100 @@ body {
 .section {
   height: 100%;
   padding: 0px;
+  overflow: hidden;
 }
 
-/* line 64, ../scss/app.scss */
+/* line 69, ../scss/app.scss */
 .front-1 {
   background-color: #34495e;
 }
 
-/* line 67, ../scss/app.scss */
+/* line 72, ../scss/app.scss */
 .back-1 {
   background-color: #34495e;
 }
 
-/* line 64, ../scss/app.scss */
+/* line 69, ../scss/app.scss */
 .front-2 {
-  background-color: #3498db;
-}
-
-/* line 67, ../scss/app.scss */
-.back-2 {
-  background-color: #3498db;
-}
-
-/* line 64, ../scss/app.scss */
-.front-3 {
-  background-color: #2980b9;
-}
-
-/* line 67, ../scss/app.scss */
-.back-3 {
-  background-color: #2980b9;
-}
-
-/* line 64, ../scss/app.scss */
-.front-4 {
-  background-color: #2ecc71;
-}
-
-/* line 67, ../scss/app.scss */
-.back-4 {
-  background-color: #2ecc71;
-}
-
-/* line 64, ../scss/app.scss */
-.front-5 {
-  background-color: #27ae60;
-}
-
-/* line 67, ../scss/app.scss */
-.back-5 {
-  background-color: #27ae60;
-}
-
-/* line 64, ../scss/app.scss */
-.front-6 {
-  background-color: #16a085;
-}
-
-/* line 67, ../scss/app.scss */
-.back-6 {
-  background-color: #16a085;
-}
-
-/* line 64, ../scss/app.scss */
-.front-7 {
-  background-color: #cf000f;
-}
-
-/* line 67, ../scss/app.scss */
-.back-7 {
-  background-color: #cf000f;
-}
-
-/* line 64, ../scss/app.scss */
-.front-8 {
-  background-color: #d91e18;
-}
-
-/* line 67, ../scss/app.scss */
-.back-8 {
-  background-color: #d91e18;
-}
-
-/* line 64, ../scss/app.scss */
-.front-9 {
-  background-color: #f22613;
-}
-
-/* line 67, ../scss/app.scss */
-.back-9 {
-  background-color: #f22613;
+  background-color: #7fa6b7;
 }
 
 /* line 72, ../scss/app.scss */
+.back-2 {
+  background-color: #7fa6b7;
+}
+
+/* line 69, ../scss/app.scss */
+.front-3 {
+  background-color: #678a9e;
+}
+
+/* line 72, ../scss/app.scss */
+.back-3 {
+  background-color: #678a9e;
+}
+
+/* line 69, ../scss/app.scss */
+.front-4 {
+  background-color: #476278;
+}
+
+/* line 72, ../scss/app.scss */
+.back-4 {
+  background-color: #476278;
+}
+
+/* line 69, ../scss/app.scss */
+.front-5 {
+  background-color: #8cb5c4;
+}
+
+/* line 72, ../scss/app.scss */
+.back-5 {
+  background-color: #8cb5c4;
+}
+
+/* line 69, ../scss/app.scss */
+.front-6 {
+  background-color: #9ed9e5;
+}
+
+/* line 72, ../scss/app.scss */
+.back-6 {
+  background-color: #9ed9e5;
+}
+
+/* line 69, ../scss/app.scss */
+.front-7 {
+  background-color: #678a9e;
+}
+
+/* line 72, ../scss/app.scss */
+.back-7 {
+  background-color: #678a9e;
+}
+
+/* line 69, ../scss/app.scss */
+.front-8 {
+  background-color: #9ac3d1;
+}
+
+/* line 72, ../scss/app.scss */
+.back-8 {
+  background-color: #9ac3d1;
+}
+
+/* line 69, ../scss/app.scss */
+.front-9 {
+  background-color: #34495e;
+}
+
+/* line 72, ../scss/app.scss */
+.back-9 {
+  background-color: #34495e;
+}
+
+/* line 77, ../scss/app.scss */
 .card-caption {
   height: 50%;
   width: 75%;
@@ -9217,12 +9218,12 @@ body {
   padding-bottom: 10%;
   text-align: center;
 }
-/* line 73, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .card-caption p {
   font-size: 20px;
 }
 
-/* line 84, ../scss/app.scss */
+/* line 89, ../scss/app.scss */
 #picture-box {
   background-image: url("../public/prof-pic.jpg");
   background-size: contain;
@@ -9231,4 +9232,26 @@ body {
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
+}
+
+/* line 99, ../scss/app.scss */
+.front-9 {
+  text-align: left;
+}
+
+/* line 102, ../scss/app.scss */
+.code {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 106, ../scss/app.scss */
+pre {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 111, ../scss/app.scss */
+h1 {
+  color: white;
 }

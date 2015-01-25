@@ -9129,6 +9129,11 @@ body {
   background-color: #34495e;
 }
 
+/* line 75, ../scss/app.scss */
+.mobile-1 {
+  background-color: #34495e;
+}
+
 /* line 69, ../scss/app.scss */
 .front-2 {
   background-color: #7fa6b7;
@@ -9136,6 +9141,11 @@ body {
 
 /* line 72, ../scss/app.scss */
 .back-2 {
+  background-color: #7fa6b7;
+}
+
+/* line 75, ../scss/app.scss */
+.mobile-2 {
   background-color: #7fa6b7;
 }
 
@@ -9149,6 +9159,11 @@ body {
   background-color: #678a9e;
 }
 
+/* line 75, ../scss/app.scss */
+.mobile-3 {
+  background-color: #678a9e;
+}
+
 /* line 69, ../scss/app.scss */
 .front-4 {
   background-color: #476278;
@@ -9156,6 +9171,11 @@ body {
 
 /* line 72, ../scss/app.scss */
 .back-4 {
+  background-color: #476278;
+}
+
+/* line 75, ../scss/app.scss */
+.mobile-4 {
   background-color: #476278;
 }
 
@@ -9169,6 +9189,11 @@ body {
   background-color: #8cb5c4;
 }
 
+/* line 75, ../scss/app.scss */
+.mobile-5 {
+  background-color: #8cb5c4;
+}
+
 /* line 69, ../scss/app.scss */
 .front-6 {
   background-color: #9ed9e5;
@@ -9176,6 +9201,11 @@ body {
 
 /* line 72, ../scss/app.scss */
 .back-6 {
+  background-color: #9ed9e5;
+}
+
+/* line 75, ../scss/app.scss */
+.mobile-6 {
   background-color: #9ed9e5;
 }
 
@@ -9189,6 +9219,11 @@ body {
   background-color: #678a9e;
 }
 
+/* line 75, ../scss/app.scss */
+.mobile-7 {
+  background-color: #678a9e;
+}
+
 /* line 69, ../scss/app.scss */
 .front-8 {
   background-color: #9ac3d1;
@@ -9196,6 +9231,11 @@ body {
 
 /* line 72, ../scss/app.scss */
 .back-8 {
+  background-color: #9ac3d1;
+}
+
+/* line 75, ../scss/app.scss */
+.mobile-8 {
   background-color: #9ac3d1;
 }
 
@@ -9209,7 +9249,12 @@ body {
   background-color: #34495e;
 }
 
-/* line 77, ../scss/app.scss */
+/* line 75, ../scss/app.scss */
+.mobile-9 {
+  background-color: #34495e;
+}
+
+/* line 80, ../scss/app.scss */
 .card-caption {
   height: 50%;
   width: 75%;
@@ -9218,12 +9263,12 @@ body {
   padding-bottom: 10%;
   text-align: center;
 }
-/* line 78, ../scss/app.scss */
+/* line 81, ../scss/app.scss */
 .card-caption p {
   font-size: 20px;
 }
 
-/* line 89, ../scss/app.scss */
+/* line 92, ../scss/app.scss */
 #picture-box {
   background-image: url("../public/prof-pic.jpg");
   background-size: contain;
@@ -9234,24 +9279,34 @@ body {
   width: 100%;
 }
 
-/* line 99, ../scss/app.scss */
+/* line 102, ../scss/app.scss */
 .front-9 {
   text-align: left;
 }
 
-/* line 102, ../scss/app.scss */
+/* line 105, ../scss/app.scss */
 .code {
   height: 100%;
   width: 100%;
 }
 
-/* line 106, ../scss/app.scss */
+/* line 109, ../scss/app.scss */
 pre {
   height: 100%;
   width: 100%;
 }
 
-/* line 111, ../scss/app.scss */
+/* line 114, ../scss/app.scss */
 h1 {
   color: white;
+}
+
+/* line 117, ../scss/app.scss */
+.mobile {
+  height: 50vh;
+}
+
+/* line 121, ../scss/app.scss */
+a {
+  color: #369D73;
 }

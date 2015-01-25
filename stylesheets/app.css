@@ -9308,5 +9308,6 @@ h1 {
 
 /* line 121, ../scss/app.scss */
 a {
-  color: #369D73;
+  color: #c0392b;
+  text-decoration: underline;
 }

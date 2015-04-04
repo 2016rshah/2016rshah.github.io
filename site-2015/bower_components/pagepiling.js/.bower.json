@@ -1,0 +1,48 @@
+{
+  "name": "pagePiling.js",
+  "version": "1.5.1",
+  "homepage": "https://github.com/alvarotrigo/pagePiling.js",
+  "authors": [
+    "Alvaro Trigo https://github.com/alvarotrigo"
+  ],
+  "description": "Create a beautiful scrolling pile of pages",
+  "main": [
+    "jquery.pagepiling.min.js",
+    "jquery.pagepiling.css"
+  ],
+  "keywords": [
+    "website",
+    "template",
+    "scroll",
+    "scrolling",
+    "fullscreen",
+    "onepage",
+    "singlepage",
+    "pile",
+    "page",
+    "layout",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "examples"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7.0"
+  },
+  "_release": "1.5.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.5.1",
+    "commit": "ea29b19592b8b7351d8e6f1a5dd4588f2a5ff1f4"
+  },
+  "_source": "git://github.com/alvarotrigo/pagepiling.js.git",
+  "_target": "~1.5.1",
+  "_originalSource": "pagepiling.js",
+  "_direct": true
+}

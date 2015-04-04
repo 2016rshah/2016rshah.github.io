@@ -1,0 +1,51 @@
+.a{
+  color:white;
+}
+.subtitle{
+  a,a:visited,a:hover,a:active{
+    -webkit-backface-visibility:hidden;
+            backface-visibility:hidden;
+  	position:relative;
+    transition:$link-anim-time color ease;
+  	text-decoration:none;
+  	color:$link-1;
+    margin-left:35px;
+    margin-right:35px;
+
+    text-shadow:  $link-color 0px 0px 1px,$link-color 0px 0px 1px,$link-color 0px 0px 1px
+                  ,$link-color 0px 0px 1px,$link-color 0px 0px 1px,$link-color 0px 0px 1px
+                  ,$link-color 0px 0px 1px,$link-color 0px 0px 1px,$link-color 0px 0px 1px
+                  ,$link-color 0px 0px 1px,$link-color 0px 0px 1px,$link-color 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+  }
+  // a:hover{
+  // 	color:$link-color;
+  // }
+  a.before:before,a.after:after{
+    content: "";
+    transition:$link-anim-time all ease;
+    -webkit-backface-visibility:hidden;
+            backface-visibility:hidden;
+    position:absolute;
+  }
+  a.before:before{
+    top:-0.25em;
+  }
+  a.after:after{
+    bottom:-0.25em;
+  }
+  a.before:before,a.after:after{
+    height:5px;
+    height:0.35rem;
+    width:0;
+    background:$link-color;
+  }
+  a.link-animation:before,a.link-animation:after{
+    left:50%;
+    -webkit-transform:translateX(-50%);
+            transform:translateX(-50%);
+  }
+  a.before:hover:before,a.after:hover:after{
+    width:100%;
+  }
+}

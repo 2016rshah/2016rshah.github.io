@@ -1,0 +1,29 @@
+.background:before {
+  //position psuedo element
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  
+  //create image
+  display: block;
+  background-image:url('../public/beach-1.jpg'); 
+  width: 100vw;
+  height: 100vh;
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+  //blur
+  -webkit-filter: blur($blur);
+  -moz-filter: blur($blur);
+  -o-filter: blur($blur);
+  -ms-filter: blur($blur);
+  filter: blur($blur);
+}
+.background {
+  //position: absolute;
+  left: 0;
+  right: 0;
+  height:100vh;
+  width:100vw;
+}

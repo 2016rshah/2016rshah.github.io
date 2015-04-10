@@ -1,50 +1,19 @@
-// window.onload = function(){
-//         console.log("Template rendered");
-//         var scene = new THREE.Scene();
-//         var WIDTH = window.innerWidth / 3;
-//         var HEIGHT = window.innerHeight/3;
-//         var camera = new THREE.PerspectiveCamera(75, WIDTH / HEIGHT, 0.1, 1000);
-//         var renderer = new THREE.WebGLRenderer();
-//         renderer.setSize(WIDTH, HEIGHT);
-//         document.getElementById("animation").appendChild(renderer.domElement);
-//         var geometry = new THREE.BoxGeometry(1, 1, 1);
-//         var material = new THREE.MeshBasicMaterial({
-//             color: 0x00ff00
-//         });
-//         cube = new THREE.Mesh(geometry, material);
-//         scene.add(cube);
-
-//         camera.position.z = 5;
-
-//         var render = function() {
-//             requestAnimationFrame(render);
-
-//             cube.rotation.x += 0.1;
-//             cube.rotation.y += 0.1;
-
-//             renderer.render(scene, camera);
-//         };
-
-//         render();
-// }
-
-
 var container;
 var camera, scene, renderer;
 var particleMaterial;
 var count;
 var CAMZ = 150;
 
-var WIDTH = window.innerWidth / 3;
-var HEIGHT = window.innerHeight / 3;
-var currentInput = "cos"
+var WIDTH = window.innerWidth / 2;
+var HEIGHT = window.innerHeight / 2;
+var currentInput = "sec"
 window.onload = function(){
     init();
     animate();
 }
 
 function init() {
-
+    console.log("initiializing")
     camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 1, 1000);
     camera.position.x = -10
     camera.position.y = 0

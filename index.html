@@ -1,209 +1,253 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rushi Shah</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="js/three.min.js"></script>
-    <script src="js/animation.js"></script> 
-  </head>
-  <body>
-
-    <!-- This is code entirely for mobile-->
-    <div class = "mobile-wrapper show-for-small-only">
-      <div class = "row mobile">
-        <div class = "column small-12 section mobile-1"><div class = "card-caption">Hello my name is Rushi Shah. I'm sixteen years old and I like programming. I am fluent in Javascript, Python, and Java. I am currently learning Ruby on Rails. Check out my github <a href = "https://github.com/2016rshah">here</a></div></div>
-      </div>
-      <div class = "row mobile">
-        <div class = "column small-12 section mobile-2"><div class = "card-caption">I am a junior at Thomas Jefferson High School for Science and Techonology. It is ranked as the <a href = "http://en.wikipedia.org/wiki/Thomas_Jefferson_High_School_for_Science_and_Technology">best high school in the nation.</a></div></div>
-      </div>
-      <div class = "row mobile">
-        <div class = "column small-12 section mobile-3"><div class = "card-caption">I am an FAA department intern at the MITRE Corporation where I created a natural language processing system for over 12,000 air traffic controller transmissions.</div></div>
-      </div>
-
-      <div class = "row mobile">
-        <div class = "column small-12 section mobile-4"><div class = "card-caption">I love hackathons. This is Yale-Hack and I have also attended Hack the North, Hack Rutgers, and PilotDC.</div></div>
-      </div>
-      <div class = "row mobile">
-        <div class = "column small-12 section mobile-5"><div class = "card-caption">I pride myself on my public speaking skills. I have competed for 2 years in both TJ's Public Forum Debate and TJ's Model United Nations Club. I am also the president of TJ's Science and Law club and the head-council member for TJ's Mock Trial Club.</div></div>
-      </div>
-      <div class = "row mobile">
-        <div class = "column small-12 section mobile-6"><div class = "card-caption">I'm an avid traveler and have visited 5 continents including more than 20 countries.</div></div>
-      </div>
-
-      <div class = "row mobile">
-        <div class = "column small-12 section mobile-7"><div class = "card-caption">I have lots of programming projects I have pursued outside of school and work. For examples feel free to poke around my <a href = "https://github.com/2016rshah">github</a>.</div></div>
-      </div>
-    </div>
-    <!-- This is code for everything other than phones -->
-    <div id = "wrap" class = "show-for-medium-up">
-      <div class = "row">
-        <div class = "column medium-4 section section-1">
-          <div class = "flip-container"  ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front front-1">
-                <img src = "public/rc-3.jpg" />
-              </div>
-              <div class="back back-1">
-                <div class = "card-caption"><p>I climb at Earth Treks indoors and Great Falls National Park outdoors. I top-rope in the <a href = "http://outdoorswithdave.com/climbing/climbing-ratings">5.9-5.11</a> range and boulder in the <a href = "http://en.wikipedia.org/wiki/Grade_%28bouldering%29#The_Hueco_scale">V1-V4</a> range.</p></div>
-              </div>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Foundation</title>
+      <!-- Setup stuff -->
+      <link rel="stylesheet" href="stylesheets/app.css" />
+      <script src="bower_components/modernizr/modernizr.js"></script>
+      <!-- Animation stuff -->
+      <script src="js/three.min.js"></script>
+      <script src="js/animation.js"></script> 
+   </head>
+   <body>
+      <div class="page row loader">
+         <div class="small-12 columns vertical-center">
+            <div class="spinner">
+               <div class="dot1"></div>
+               <div class="dot2"></div>
             </div>
-          </div>
-        </div>
-        <div class = "column medium-4 section section-2">
-          <div class = "flip-container"  ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front front-2" id = "animation">
-                <!-- This is where the animation is -->
-              </div>
-              <div class="back back-2">
-                <div class = "card-caption">
-                  <p>This is a demonstration of graphing trig functions in three-dimensions with ThreeJS. You can try it out and find more information <a href = "http://threejs.meteor.com/animations/animation4">here</a></p>
+         </div>
+      </div>
+      <div class="content">
+         <!-- Actual content -->
+         <div class="page landing-page background row">
+            <div class="row vertical-center">
+               <div class="row">
+                  <div class="small-12 columns">
+                     <h1 class="title">Rushi Shah</h1>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="small-12 columns">
+                     <h2 class="subtitle">
+                        <a class="link-animation before after" href="https://github.com/2016rshah">Github</a>
+                        <a class="link-animation before after" href="https://twitter.com/2016rshah">Twitter</a>
+                        <a class="link-animation before after" href="mailto:2016rshah@gmail.com">Email</a>
+                     </h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="page row introduction">
+            <div class="row vertical-center">
+               <div class="large-6  small-12 columns">
+                  <img class="th" src="public/prof-pic.jpg" /> <!-- Make a hover for lived in 7 states, traveled to 25+ countries -->
+               </div>
+               <div class="large-6 small-12 columns description">
+                  <h2>
+                  Hello World!</h1>
+                  <p>
+                     Nice to meet you, my name is Rushi Shah. I am a junior at Thomas Jefferson High School for Science and Technology (<a href="http://www.newsweek.com/2014/09/19/number-1-high-school-america-offers-real-head-start-268693.html">the best school in America</a>).
+                  </p>
+                  <p>I <span class="heart glyphicon glyphicon-heart-empty"></span> programming.</p>
+                  <p>You can follow me on <a href="https://github.com/2016rshah">Github</a> and <a href="https://twitter.com/2016rshah">Twitter</a>. You can also <a href="mailto:2016rshah@gmail.com">email me</a> (if you're into that).</p>
+               </div>
+            </div>
+         </div>
+         <div class="row programming page">
+            <div class="row">
+               <div class="small-12 columns">
+                  <h1>Programming</h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="small-12 columns">
+                  <div id="animation"></div>
+                  I made this with ThreeJS; it graphs a trig function in three dimensions and multiple colors. 
+               </div>
+            </div>
+            <div class="row">
+               <div class="large-4 columns">
+                  <h2>Java</h2>
+                  <span class="label success">Fluent</span>
+                  <!--                         <p>
+                     I've taken two years of formal Java classes and worked with it extensively. 
+                     </p> -->
+               </div>
+               <div class="large-4 columns">
+                  <h2>Python</h2>
+                  <span class="label success">Fluent</span>
+                  <!-- <p>
+                     I've taken one formal class (Artificial Intelligence 1) and used it during one of my internships (at the MITRE Corporation).  
+                     </p> -->
+               </div>
+               <div class="large-4 columns">
+                  <h2>Javascript</h2>
+                  <span class="label success">Fluent</span>
+                  <!--                         <p>
+                     When working on my own projects I almost always use JavaScript because I like it a lot! Most of my hackathon projects are in JavaScript. Specifically I am a big fan of <a href="https://www.meteor.com/">Meteor</a> and <a href="http://threejs.meteor.com/">ThreeJS</a>
+                     </p>
+                     -->                    
+               </div>
+            </div>
+            <div class="row">
+               <div class="large-4 columns">
+                  <h2>Ruby on Rails</h2>
+                  <span class="label">Learning</span>
+                  <!--                         <p>
+                     I have been learning Ruby on Rails. I created a Rails CMS for TechMUN (my school's Model United Nations Conference) to let us create and distribute fake CNN articles to our committees. 
+                     </p>
+                     -->                    
+               </div>
+               <div class="large-4 columns">
+                  <h2>Haskell</h2>
+                  <span class="label">Learning</span>
+                  <!--                         <p>
+                     I've tried to dabble with functional programming. I have worked through tutorials and completed Project Euler problems here or there but I have not undertaken any massive projects with it (yet). 
+                     </p>
+                     -->                    
+               </div>
+               <div class="large-4 columns">
+                  <h2>C derivatives</h2>
+                  <span class="label">Learning</span>
+                  <!--                         <p>
+                     I've used Arduino C in my Energy Systems class and at home with my own arduino. I am learning C++ much in the same way I am learning Haskell.  
+                     </p>
+                     -->                    
+               </div>
+            </div>
+         </div>
+         <div class="row work page">
+            <div class="row">
+               <div class="small-12 columns">
+                  <h1>Work Experience</h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="large-6 columns">
+                  <img class="work-image" src="public/mitre-1.jpg" />
+               </div>
+               <div class="large-6 columns">
+                  <img class="work-image" src="public/nclud.png" />
+               </div>
+            </div>
+            <div class="row">
+               <div class="large-6 columns">
+                  <h2 class="subtitle"><a class="link-animation before after" href="http://www.mitre.org/about/corporate-overview">The MITRE Corporation</a></h2>
+                  <p>
+                     Over the summer I am a paid technical CS intern for the FAA department of the MITRE Corporation (a FFRDC Agency). Last summer I created a natural language processing system for over 12,000 Air Traffic Controller Transmissions. I also created call-sign identification algorithms for the speech recognition engine and generated metrics and statistics on the air-traffic control language.    
+                  </p>
+               </div>
+               <div class="large-6 columns">
+                  <h2 class="subtitle"><a class="link-animation before after" href="http://nclud.com/">nclud</a></h2>
+                  <p>
+                     During this school year I interned at nclud (a DC-based Web Design Firm). While there I assisted on various projects such as the nclud rebrand, the GreenMachine site, and the very important Meteor-Twitter pun app. 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="row other">
+            <div class="row">
+               <div class="small-12 columns">
+                  <h1>Interests</h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="large-6 columns">
+                  <img src="public/tjmun.jpg" />
+               </div>
+               <div class="large-6 columns">
+                  <img src="public/rc-3.jpg" /> <!-- Add a hover for rock-climbing skill -->
+               </div>
+            </div>
+            <div class="row">
+               <div class="large-6 columns">
+                  <h2 class="subtitle">Extra-Cirriculars</h2>
+                  <p>
+                     TJ Model United Nations, TJ Public Forum Debate, TJ Mock Trial Club, TJ Science and Law Club.     
+                  </p>
+               </div>
+               <div class="large-6 columns">
+                  <h2 class="subtitle">Adventure</h2>
+                  <p>
+                     Traveled to 25+ countries, 5 continents. Tried: surfing, para-gliding, biking, hiking, sand-boarding, dune-buggying, flying, roller-coastering, snorkelling, scuba-diving, sailing, and jet-skiing.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!--             <div class="page row adventure">
+            <div class="row">
+                <div class="small-12 columns">
+                    <h1>Adventure</h1>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class = "column medium-4 section section-3">
-          <div class = "flip-container"  ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front front-3">
-                <img src = "public/tjmun.jpg"></img>
-              </div>
-              <div class="back back-3">
-                <div class = "card-caption"><p>I pride myself on my public speaking skills. I have competed for two years in both TJ's Public Forum Debate Club and TJ's Model United Nations Club. I am also the president of TJ's Science and Law club and the head-council member for TJ's Mock Trial Club.</p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class = "row">
-        <div class = "column medium-4 section section-4">
-          <div class = "flip-container"  ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front front-4">
-                <img src = "public/mitre-2.jpg"></img>
-              </div>
-              <div class="back back-4">
-                <div class = "card-caption"><p>I am an FAA department intern at the <a href = "http://www.mitre.org/">MITRE Corporation</a> where I created a natural language processing system for over 12,000 air traffic controller transmissions.</p></div>  
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class = "column medium-4 section section-5">
-          <div class = "flip-container"  ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front front-5">
-                <div id = "picture-box">
+            <div class="row">
+                <div class="large-6 small-12 columns">
+                    <p>
+                        I have lived in seven different states. 
+                    </p>
+                    <p>
+                        I have traveled to over 25 countries in five different continents. 
+                    </p>
+                    <p>
+                        I really like rock-climbing. I climb outside at Great Falls National Park and inside wherever I can. I climb in the 5.9-5.11 range and boulder in the V1-V4 range. 
+                    </p>
+                    <p>
+                        Throughout my travels I have been surfing, para-gliding, biking, hiking, sand-boarding, dune-buggying, flying, roller-coastering, snorkelling, scuba-diving, sailing, and jet-skiing.
+                    </p>
                 </div>
-              </div>
-              <div class="back back-5">
-                <div class = "card-caption">
-                  <p>Hello! My name is Rushi Shah. I am sixteen years old and I enjoy programming, rock-climbing, and public speaking.</p>
-                  <div class = "links"><a href="https://twitter.com/2016rshah">Twitter</a> <a href="https://github.com/2016rshah">Github</a> <a href="mailto:2016rshah@gmail.com">Email</a></div>
+                <div class="large-6  small-12 columns">
+                    <img class="th" src="public/rc-3.jpg" />
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class = "column medium-4 section section-6">
-          <div class = "flip-container"  ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front front-6">
-                <img src = "public/tj-plans.jpg"></img>
-              </div>
-              <div class="back back-6">
-                <div class = "card-caption">
-                  <p>I am a junior at Thomas Jefferson High School for Science and Techonology. It is ranked as the <a href = "http://en.wikipedia.org/wiki/Thomas_Jefferson_High_School_for_Science_and_Technology">best high school in the nation.</a></p>
-                  <div class="attribution">*Picture not mine*</div>
+            </div> -->
+         <!--             <div class="page row speaking"> 
+            <div class="row">
+                <div class="small-12 columns">
+                    <h1>Public Speaking</h1>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
+            <div class="row">
+                <div class="large-6  small-12 columns">
+                    <img class="th" src="public/tjmun.jpg" />
+                </div>
+                <div class="large-6 small-12 columns">
+                    <p>
+                        I competed in Public Forum Debate for two years. During that time I attended Columbia Universitie's Public Forum Competition (my partner and I were the highest seed 3-3 team) and won the DC Metro Area Regional Competition.  
+                    </p>
+                    <p>
+                        I have participated in Model United Nations for the past two years. I have won numerous awards at numerous national competitions including but not limited to the Ivy League Model United Nations Conference at University of Pennsylvania and the Washington Area Model United Nations Conference at George Washington University (I won Best Delegate at both).
+                    </p>
+                    <p>
+                        I am also the President of my school's Science and Law Club and the Head Council Member for my school's Mock Trial Club
+                    </p>
+                </div>      
+            </div>
+            </div> -->
+         <div class="page last-page row">
+            <div class="row vertical-center">
+               <div class="small-12 columns">
+                  <div class="row">
+                     <h1 class="title">Talk to me!</h1>
+                  </div>
+                  <div class="row">
+                     <div class="small-12 columns">
+                        <h2 class="subtitle">
+                           <a class="link-animation before after" href="https://github.com/2016rshah">Github</a>
+                           <a class="link-animation before after" href="https://twitter.com/2016rshah">Twitter</a>
+                           <a class="link-animation before after" href="#">Email</a>
+                        </h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      <div class = "row">
-        <div class = "column medium-4 section section-7">
-          <div class = "flip-container"  ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front front-7">
-                <img src = "public/beach-1.jpg"></img>
-              </div>
-              <div class="back back-7">
-                <div class = "card-caption"><p>This was the view from the Dominican Republic. I'm an avid traveler and have visited five continents including more than 20 countries. I have also lived in seven states.</p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class = "column medium-4 section section-8">
-          <div class = "flip-container"  ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front front-8">
-                <img src = "public/yhack-1.jpg"></img>
-              </div>
-              <div class="back back-8">
-                <div class = "card-caption"><p>I love hackathons. This photo was taken at <a href="https://github.com/Pynt/Pynt">Yale-Hack</a> and I have also attended <a href="http://challengepost.com/software/spacebowl-oculus-myo">Hack the North</a>, <a href="https://github.com/2016rshah/spotify/tree/master/replaceTracks">Hack Rutgers</a>, and <a href="https://github.com/mjkaufer/3draw">PilotDC</a>.</p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class = "column medium-4 section section-9">
-          <div class = "flip-container"  ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front front-9">
-              <!-- This needs to be automated to find random code from my github that changes on refresh -->
-                    <pre>
-<textarea id = "random-code" class = "code">
-from Tree import *
-import random
-
-def evolve(tree, rate):
-    string = tree.cargo
-    mutation = random.randint(0, rate)
-    if(mutation==0):
-        chars = []
-        for s in string:
-            chars.append(s)
-        i = random.randint(0, len(chars)-1)
-        chars[i] = "1"
-        string = ''.join(chars)
-    tree.left = Tree(tree.cargo, depth = tree.depth+1)
-    tree.right = Tree(string, depth = tree.depth+1)
-    return tree
-def evolveLeaves(tree, rate):
-    if(tree.left!=None and tree.right!=None):
-        evolveLeaves(tree.left, rate)
-        evolveLeaves(tree.right, rate)
-    else:
-        tree = evolve(tree, rate)
-        return tree
-
-
-root = Tree("00000000")
-r = int(input("What do you want the mutation rate to be (i.e mutates 1 in ____ times)?"))
-root = evolve(root, r)
-for generation in range(0, 10):
-    evolveLeaves(root, r)
-root.convertFromBin(root)
-s = set()
-root.leaves(root, s)
-root.printTree(root)
-print(s)
-</textarea>
-                    </pre>
-              </div>
-              <div class="back back-9">
-                <div class = "card-caption"><p>I am fluent in Javascript, Python, and Java. I am currently learning Ruby on Rails. Check out my github <a href = "https://github.com/2016rshah">here</a></p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+      <!-- More setup stuff -->
+      <script src="bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="bower_components/foundation/js/foundation.min.js"></script>
+      <script src="js/app.js"></script>
+   </body>
 </html>

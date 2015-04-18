@@ -2,6 +2,7 @@
 @import "vars";
 @import "foundation/components/grid";
 @import "foundation/components/type";
+@import "foundation/components/visibility";
 @import "base";
 @import "fonts";
 @import "background";
@@ -11,6 +12,7 @@
 @import "foundation/components/labels";
 @import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 @import "loading";
+
 
 
 // @import "foundation";
@@ -50,4 +52,3 @@
 //   "foundation/components/top-bar",
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
-//   "foundation/components/visibility";

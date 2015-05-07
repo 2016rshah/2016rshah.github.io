@@ -15,6 +15,11 @@ $(document).ready(function() {
     $window.on('scroll', onScroll)
     $window.on('resize', resize)
     $('a[href^="#"]').on('click', smoothScroll)
+
+
+    setInterval(function(){
+      toggleHeart()
+    }, 860);
   }
 
   function smoothScroll(e) {
@@ -32,7 +37,7 @@ $(document).ready(function() {
   }
 
   function resize() {
-    //$body.removeClass('has-docked-nav')
+    $body.removeClass('has-docked-nav')
     navOffsetTop = $nav.offset().top
     onScroll()
   }
@@ -56,6 +61,11 @@ $(document).ready(function() {
       $(".link-3").addClass(undockedSize)
       $body.removeClass('has-docked-nav')
     }
+  }
+
+  function toggleHeart(){
+    $(".heart").toggleClass("fa-heart")
+    $(".heart").toggleClass("fa-heart-o")
   }
 
   init();

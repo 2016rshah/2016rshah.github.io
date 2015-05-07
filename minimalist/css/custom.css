@@ -1,6 +1,9 @@
 .title{
   /*color:#2980b9;*/
-  margin-bottom:20%;
+  /*margin-bottom:20%;*/
+}
+.header{
+	margin-top:10%;
 }
 
 .links{
@@ -15,4 +18,10 @@
 }
 .link-3{
   margin-left:0px;
+}
+
+.prof-pic{
+	border-radius:50%;
+	height:275px;
+	width:275px;
 }

@@ -25,3 +25,16 @@
 	height:275px;
 	width:275px;
 }
+.circle{
+	border-radius:50%;
+	max-width:200px;
+	max-height:200px;
+}
+.center-text{
+	text-align:center;
+}
+.mitre-img{
+	max-width:350px;
+	max-height:300px;
+	border-radius:50%;
+}

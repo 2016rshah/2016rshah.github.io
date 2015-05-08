@@ -4,13 +4,14 @@ var particleMaterial;
 var count;
 var CAMZ = 150;
 
-var WIDTH = window.innerWidth / 2;
-var HEIGHT = window.innerHeight / 2;
+
 var currentInput = "sec"
-window.onload = function(){
+document.addEventListener("DOMContentLoaded", function(event){
+    WIDTH = document.getElementById("animation").offsetWidth
+    HEIGHT = document.getElementById("animation").offsetHeight
     init();
     animate();
-}
+})
 
 function init() {
     console.log("initiializing")
@@ -22,8 +23,7 @@ function init() {
     count = 0;
     var PI2 = Math.PI * 2;
 
-
-    particleMaterial = new THREE.MeshBasicMaterial({
+    particleMaterial = new THREE.ParticleCanvasMaterial({
         color: 0x66FF66,
         program: function(context) {
             context.beginPath();
@@ -48,7 +48,7 @@ function init() {
     }
 
 
-    renderer = new THREE.WebGLRenderer();
+    renderer = new THREE.CanvasRenderer();
     renderer.setSize(WIDTH, HEIGHT);
     document.getElementById("animation").appendChild(renderer.domElement);
 }

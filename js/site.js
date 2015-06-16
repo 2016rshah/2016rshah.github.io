@@ -1,18 +1,15 @@
-$(document).ready(function() {
-
+function whenReady(){
   // Variables
   var undockedSize = "six"
   var dockedSize = "four"
 
   var nav = document.getElementById("navbar"),
       body = document.body,
-      $window = $(window),
-      navOffsetTop = offset(nav).top,
-      $document = $(document)
+      navOffsetTop = offset(nav).top
 
   function init() {
-    $window.on('scroll', onScroll) //fix this
-    $window.on('resize', resize) //fix this
+    window.addEventListener("scroll", onScroll)
+    window.addEventListener("resize", resize)
 
 
     setInterval(function(){
@@ -27,7 +24,7 @@ $(document).ready(function() {
   }
 
   function onScroll() {
-    if(navOffsetTop < $window.scrollTop() && !hasClass(body,'has-docked-nav')) { //fix this
+    if(navOffsetTop < window.pageYOffset && !hasClass(body,'has-docked-nav')) {
       document.getElementById("link-1").style.display = 'block';
       var link2 = document.getElementById("link-2")
       var link3 = document.getElementById("link-3")
@@ -38,7 +35,7 @@ $(document).ready(function() {
 
       addClass(body, 'has-docked-nav')
     }
-    if(navOffsetTop > $window.scrollTop() && !hasClass(body, 'has-docked-nav')) { //fix this
+    if(navOffsetTop > window.pageYOffset && !hasClass(body, 'has-docked-nav')) {
       document.getElementById("link-1").style.display = 'none';
       var link2 = document.getElementById("link-2")
       var link3 = document.getElementById("link-3")
@@ -59,4 +56,4 @@ $(document).ready(function() {
 
   init();
 
-});
+}

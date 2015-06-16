@@ -4,17 +4,15 @@ $(document).ready(function() {
   var undockedSize = "six"
   var dockedSize = "four"
 
-  var $codeSnippets = $('.code-example-body'),
-      $nav = $('.navbar'),
+  var $nav = $('.navbar'),
       $body = $('body'),
       $window = $(window),
       navOffsetTop = $nav.offset().top,
       $document = $(document)
 
   function init() {
-    $window.on('scroll', onScroll)
-    $window.on('resize', resize)
-    $('a[href^="#"]').on('click', smoothScroll)
+    $window.on('scroll', onScroll) //fix this
+    $window.on('resize', resize) //fix this
 
 
     setInterval(function(){
@@ -22,28 +20,14 @@ $(document).ready(function() {
     }, 860);
   }
 
-  function smoothScroll(e) {
-    e.preventDefault();
-    $(document).off("scroll");
-    var target = this.hash,
-        menu = target;
-    $target = $(target);
-    $('html, body').stop().animate({
-        'scrollTop': $target.offset().top-40
-    }, 0, 'swing', function () {
-        window.location.hash = target;
-        $(document).on("scroll", onScroll);
-    });
-  }
-
   function resize() {
-    $body.removeClass('has-docked-nav')
-    navOffsetTop = $nav.offset().top
+    $body.removeClass('has-docked-nav') //fix this
+    navOffsetTop = $nav.offset().top //fix this
     onScroll()
   }
 
   function onScroll() {
-    if(navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
+    if(navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) { //fix this
       document.getElementById("link-1").style.display = 'block';
       var link2 = document.getElementById("link-2")
       var link3 = document.getElementById("link-3")
@@ -51,9 +35,9 @@ $(document).ready(function() {
       addClass(link2, dockedSize)
       remClass(link3, undockedSize)
       addClass(link3, dockedSize)
-      $body.addClass('has-docked-nav')
+      $body.addClass('has-docked-nav') //fix this
     }
-    if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
+    if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) { //fix this
       document.getElementById("link-1").style.display = 'none';
       var link2 = document.getElementById("link-2")
       var link3 = document.getElementById("link-3")
@@ -61,27 +45,14 @@ $(document).ready(function() {
       addClass(link2, undockedSize)
       remClass(link3, dockedSize)
       addClass(link3, undockedSize)
-      $body.removeClass('has-docked-nav')
+      $body.removeClass('has-docked-nav') //fix this
     }
   }
 
-  function addClass(el, className){
-    if (el.classList)
-      el.classList.add(className);
-    else
-      el.className += ' ' + className;
-  }
-
-  function remClass(el, className){
-    if (el.classList)
-      el.classList.remove(className);
-    else
-      el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-  }
-
   function toggleHeart(){
-    $(".heart").toggleClass("fa-heart")
-    $(".heart").toggleClass("fa-heart-o")
+    var heart = document.getElementById("heart")
+    toggle(heart, "fa-heart")
+    toggle(heart, "fa-heart-o")
   }
 
   init();

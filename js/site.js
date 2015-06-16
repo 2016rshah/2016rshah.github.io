@@ -45,22 +45,38 @@ $(document).ready(function() {
   function onScroll() {
     if(navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
       document.getElementById("link-1").style.display = 'block';
-      $(".link-2").removeClass(undockedSize)
-      $(".link-2").addClass(dockedSize)
-      $(".link-3").removeClass(undockedSize)
-      $(".link-3").addClass(dockedSize)
+      var link2 = document.getElementById("link-2")
+      var link3 = document.getElementById("link-3")
+      remClass(link2, undockedSize)
+      addClass(link2, dockedSize)
+      remClass(link3, undockedSize)
+      addClass(link3, dockedSize)
       $body.addClass('has-docked-nav')
     }
     if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
       document.getElementById("link-1").style.display = 'none';
-
-
-      $(".link-2").removeClass(dockedSize)
-      $(".link-2").addClass(undockedSize)
-      $(".link-3").removeClass(dockedSize)
-      $(".link-3").addClass(undockedSize)
+      var link2 = document.getElementById("link-2")
+      var link3 = document.getElementById("link-3")
+      remClass(link2, dockedSize)
+      addClass(link2, undockedSize)
+      remClass(link3, dockedSize)
+      addClass(link3, undockedSize)
       $body.removeClass('has-docked-nav')
     }
+  }
+
+  function addClass(el, className){
+    if (el.classList)
+      el.classList.add(className);
+    else
+      el.className += ' ' + className;
+  }
+
+  function remClass(el, className){
+    if (el.classList)
+      el.classList.remove(className);
+    else
+      el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
   }
 
   function toggleHeart(){

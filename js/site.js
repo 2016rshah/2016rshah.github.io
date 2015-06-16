@@ -44,8 +44,7 @@ $(document).ready(function() {
 
   function onScroll() {
     if(navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
-      $(".link-1").show();
-      console.log("showed name")
+      document.getElementById("link-1").style.display = 'block';
       $(".link-2").removeClass(undockedSize)
       $(".link-2").addClass(dockedSize)
       $(".link-3").removeClass(undockedSize)
@@ -53,8 +52,9 @@ $(document).ready(function() {
       $body.addClass('has-docked-nav')
     }
     if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
-      $(".link-1").hide();
-      console.log("showed name")
+      document.getElementById("link-1").style.display = 'none';
+
+
       $(".link-2").removeClass(dockedSize)
       $(".link-2").addClass(undockedSize)
       $(".link-3").removeClass(dockedSize)

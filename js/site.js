@@ -4,10 +4,10 @@ $(document).ready(function() {
   var undockedSize = "six"
   var dockedSize = "four"
 
-  var $nav = $('.navbar'),
+  var nav = document.getElementById("navbar"),
       $body = $('body'),
       $window = $(window),
-      navOffsetTop = $nav.offset().top,
+      navOffsetTop = offset(nav).top,
       $document = $(document)
 
   function init() {
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   function resize() {
     $body.removeClass('has-docked-nav') //fix this
-    navOffsetTop = $nav.offset().top //fix this
+    navOffsetTop = offset(nav).top
     onScroll()
   }
 

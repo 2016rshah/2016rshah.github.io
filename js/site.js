@@ -3,15 +3,13 @@ function whenReady(){
   var undockedSize = "six"
   var dockedSize = "four"
 
-  var nav = document.getElementById("navbar"),
-      body = document.body,
-      navOffsetTop = offset(nav).top
+  var nav = document.getElementById("navbar")
+  var body = document.body
+  var navOffsetTop = offset(nav).top
 
   function init() {
     window.addEventListener("scroll", onScroll)
     window.addEventListener("resize", resize)
-
-
     setInterval(function(){
       toggleHeart()
     }, 860);
@@ -32,7 +30,6 @@ function whenReady(){
       addClass(link2, dockedSize)
       remClass(link3, undockedSize)
       addClass(link3, dockedSize)
-
       addClass(body, 'has-docked-nav')
     }
     if(navOffsetTop > window.pageYOffset && !hasClass(body, 'has-docked-nav')) {
@@ -43,7 +40,6 @@ function whenReady(){
       addClass(link2, undockedSize)
       remClass(link3, dockedSize)
       addClass(link3, undockedSize)
-
       remClass(body, 'has-docked-nav')
     }
   }
@@ -55,5 +51,4 @@ function whenReady(){
   }
 
   init();
-
 }

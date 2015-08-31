@@ -68,3 +68,7 @@ a {
 a:hover{
 	color:#1BBC9B;
 }
+
+.fancy-font{
+	font-family: "Bad Script", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

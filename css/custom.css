@@ -72,3 +72,7 @@ a:hover{
 .fancy-font{
 	font-family: "Bad Script", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.gh-chart{
+	width:100%;
+}

@@ -1,2 +1,2 @@
-#[Rushi Shah](http://www.rshah.io/)
+#[Rushi Shah](http://www.rshah.org/)
 

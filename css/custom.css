@@ -76,3 +76,11 @@ a:hover{
 .gh-chart{
 	width:100%;
 }
+
+.papercraft-back {
+  fill: #44A340;
+}
+
+.papercraft-front {
+  fill: #D6E685;
+}

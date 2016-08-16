@@ -3,7 +3,7 @@ function whenReady(){
   console.log("ready")
   replace(document.getElementById("actual1"), document.getElementById("placeholder1"))
   replace(document.getElementById("actual2"), document.getElementById("placeholder2"))
-
+  replace(document.getElementById("actual3"), document.getElementById("placeholder3"))
 
   function replace(actual, placeholder){
     actual.addEventListener("load", function(){

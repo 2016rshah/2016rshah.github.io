@@ -6,7 +6,7 @@
 	font-size:larger;
 }
 .header{
-	margin-top:10%;
+	margin-top:5%;
 }
 
 .links{
@@ -63,6 +63,7 @@
 
 a {
 	color:#26A65B;
+	/*color:#22333B;*/
 }
 
 a:hover{
@@ -76,11 +77,7 @@ a:hover{
 .gh-chart{
 	width:100%;
 }
-
-.papercraft-back {
-  fill: #44A340;
-}
-
-.papercraft-front {
-  fill: #D6E685;
+.east{line-height: 275px;}
+.west {
+	line-height:275px;
 }

@@ -5,6 +5,7 @@ function whenReady(){
   replace(document.getElementById("actual2"), document.getElementById("placeholder2"))
   replace(document.getElementById("actual3"), document.getElementById("placeholder3"))
 
+
   function replace(actual, placeholder){
     actual.addEventListener("load", function(){
       placeholder.style.display="none";
@@ -17,4 +18,8 @@ function whenReady(){
     toggle(heart, "fa-heart")
     toggle(heart, "fa-heart-o")
   }
+
+  setInterval(function(){
+    toggleHeart()
+  }, 860);
 }

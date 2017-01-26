@@ -68,6 +68,7 @@ a {
 
 a:hover{
 	color:#1BBC9B;
+	cursor: pointer;
 }
 
 .fancy-font{

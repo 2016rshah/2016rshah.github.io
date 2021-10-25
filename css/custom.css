@@ -62,12 +62,14 @@
 }
 
 a {
-	color:#26A65B;
 	/*color:#22333B;*/
+	/* color:#26A65B; */ /* green */
+	color:#C26E00; /* orange */
 }
 
 a:hover{
-	color:#1BBC9B;
+	/*	color:#1BBC9B; */ /* green */
+	color: #e7962b; /* orange */
 	cursor: pointer;
 }
 

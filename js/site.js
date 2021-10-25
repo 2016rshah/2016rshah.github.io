@@ -10,7 +10,7 @@ function whenReady(){
     actual.addEventListener("load", function(){
       placeholder.style.display="none";
     }, false)
-    actual.src="https://ghchart.rshah.org/2016rshah.svg"
+    actual.src="https://ghchart.rshah.org/C26E00/2016rshah.svg"
   }
 
   function toggleHeart(){
